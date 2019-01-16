@@ -1,0 +1,35 @@
+<div class='container'>
+
+    <div class='row'>
+        <div class='col-lg-4'>
+            <h2>Not Eaten:</h2>
+            <ol class='ol-!devoured'>
+                {{#each burgers}}
+                    {{#unless this.devoured}}
+                            <li class='bg-warning'>{{this.burger_name}}<button class='btnEatBurger' dataId={{this.id}}>Eat</button></li>
+                    {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
+        <div class='col-lg-4'>
+            <h2 class='d-flex justify-content-center'>Add New Burger</h2>
+            <form method='POST' action='/api/:burgerName' class='d-flex justify-content-center'>
+                <label for='inBurgerName'></label>
+                <input type='text' id='inBurgerName' name='burgerName'/>
+                <button type='submit' class='block'>Add Burger</button>
+            </form>
+        </div>
+        <div class='col-lg-4'>
+            <h2>Eaten:</h2>
+            <ol class='ol-devoured'>
+                {{#each burgers}}
+                    {{#if this.devoured}}
+                            <li class='bg-light'>{{this.burger_name}}</li>
+                    {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+
+</div>
+
