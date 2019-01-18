@@ -1,7 +1,6 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 const keys = require('./keys');
-// const password = require('D://Documents//Columbia Engineering/password.json');
 
 const connection = mysql.createConnection({
   host: keys.connection.host,
