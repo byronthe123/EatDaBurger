@@ -6,7 +6,7 @@
             <ol class='ol-!devoured'>
                 {{#each burgers}}
                     {{#unless this.devoured}}
-                            <li class='bg-warning'>{{this.burger_name}}<button class='btnEatBurger' dataId={{this.id}}>Eat</button></li>
+                            <li class='bg-warning burgerLi'>{{this.burger_name}}<button class='btnEatBurger' dataId={{this.id}}>Eat</button></li>
                     {{/unless}}
                 {{/each}}
             </ol>
