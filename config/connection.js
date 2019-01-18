@@ -1,6 +1,6 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
-const password = require('D://Documents//Columbia Engineering/password.json');
+// const password = require('D://Documents//Columbia Engineering/password.json');
 
 const connection = mysql.createConnection({
   host: "ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
