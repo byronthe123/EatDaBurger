@@ -1,14 +1,14 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
+const keys = require('./keys');
 // const password = require('D://Documents//Columbia Engineering/password.json');
 
 const connection = mysql.createConnection({
-  host: "ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  host: keys.connection.host,
   port: 3306,
-  user: "yd382k4x79sjfjtq",
-  password: 'xgtn8ztz9ciz0k1r',
-  database: "j2g9js7aiwk4gkdh",
-//   debug: true
+  user: keys.connection.user,
+  password: keys.connection.password,
+  database: keys.connection.database
 });
 
 // Make connection.
