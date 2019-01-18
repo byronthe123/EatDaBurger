@@ -3,10 +3,10 @@ const mysql = require("mysql");
 const password = require('D://Documents//Columbia Engineering/password.json');
 
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
-  password: password.password,
+  user: "yd382k4x79sjfjtq",
+  password: 'xgtn8ztz9ciz0k1r',
   database: "burgers_db",
 //   debug: true
 });
