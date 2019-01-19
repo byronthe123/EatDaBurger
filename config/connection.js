@@ -12,7 +12,7 @@ let connection;
 // });
 
 if(process.env.JAWSDB_URL) {
-  connectionn = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
     // host: keys.host,
