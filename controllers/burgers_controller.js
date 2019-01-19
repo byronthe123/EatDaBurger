@@ -8,7 +8,6 @@ router.get('/', (req, res, next) => {
         if(err) {
             return next(err);
         }
-        // return res.send(data);
         return res.render('index', {burgers: data});
     })
 });
